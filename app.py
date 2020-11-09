@@ -10,8 +10,13 @@
 # +$100 all of one
 
 options = {
-  1: 'bomb',
-  2: '777',
-  3: 'cherries',
-  4: 'diamonds'
+  1: {'bomb': 'Better luck next time!'},
+  2: {'777': 'Add $2'},
+  3: {'cherries': 'Add $4'},
+  4: {'diamonds': 'Add $12'}
 }
+
+wallet = 100
+
+
+
