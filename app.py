@@ -1,11 +1,8 @@
 import random
 
-
-
-input1 = input("Welcome to Bottega Slots! '777' is worth $2, 'cherries' \nis worth $4, and 'diamonds' is worth $12! \nIf 'bomb' shows, you lose your money! It costs $5 to spin. \nWould you like to play? (y = yes, n = no)\n Enter here:")
+input1 = input("Welcome to Bottega Slots! '777' is worth $2, 'cherries' \nis worth $4, and 'diamonds' is worth $12! \nIf 'bomb' shows, you lose your money! It costs $5 to spin. \nWould you like to play? (y = yes, n = no)\nEnter here:")
 
 wallet = 100
-
 while input1 == 'y':
   main_container = []
   result = []
@@ -35,16 +32,16 @@ while input1 == 'y':
     print(result)
     print("Sorry, better luck next time!")
     print(f"You now have ${wallet} in your wallet.")
-    input1 = input("\nWould you like to play again?")
+    
 
   else:
     wallet = wallet - 5 + winnings
     print(result)
     print(f"Congratulations! You win ${winnings}! You now have ${wallet} in your wallet.")
-    prompt = input("\nWould you like to play again? (Enter y for yes and n for no)")
     main_container.remove(random_selection)
-    if prompt == 'n':
-      print("Thank you for playing!")
-      break
+
+  input1 = input("\nWould you like to play again? (y = yes, n = no)\nEnter here:")
+  if input1 == 'n':
+    print("Thank you for playing!")
 
 
